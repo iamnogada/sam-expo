@@ -1,14 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { StyleSheet, Text, View } from 'react-native'
+import AppNavigator from '@screens/AppNavigator'
+import SplashNavigator from '@screens/SplashNavigator'
+import LoginNavigator from '@screens/LoginNavigator'
 
 export default function App() {
+  const isFirstTimeRun = false
+  const isSignedIn = true
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <SafeAreaProvider>
+      <NavigationContainer>
+        {isFirstTimeRun ? (
+          <SplashNavigator />
+        ) : isSignedIn ? (
+          <AppNavigator />
+        ) : (
+          <LoginNavigator />
+        )}
+      </NavigationContainer>
+    </SafeAreaProvider>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -18,4 +31,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
