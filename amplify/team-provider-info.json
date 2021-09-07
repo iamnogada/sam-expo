@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-samexpo-dev-125012-authRole",
+      "UnauthRoleArn": "arn:aws:iam::428923833419:role/amplify-samexpo-dev-125012-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::428923833419:role/amplify-samexpo-dev-125012-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-samexpo-dev-125012-deployment",
+      "UnauthRoleName": "amplify-samexpo-dev-125012-unauthRole",
+      "StackName": "amplify-samexpo-dev-125012",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:428923833419:stack/amplify-samexpo-dev-125012/b6295ee0-0f8e-11ec-976b-0291f8b77386",
+      "AmplifyAppId": "ddh5ato5sj1r0"
+    }
+  }
+}

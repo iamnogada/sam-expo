@@ -6,7 +6,8 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       "tests": ["tests/*"],
-      "@screens/*": ["src/screens/*"]
+      "@screens/*": ["src/screens/*"],
+      "@contexts/*": ["src/contexts/*"]
     }
   }
 }
