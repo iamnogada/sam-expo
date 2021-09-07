@@ -6,8 +6,11 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       "tests": ["tests/*"],
-      "@screens/*": ["src/screens/*"],
-      "@contexts/*": ["src/contexts/*"]
+      "@constants/*": ["src/constants/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@graphql/*": ["src/graphql/*"],
+      "@reducers/*": ["src/reducers/*"],
+      "@screens/*": ["src/screens/*"]
     }
   }
 }

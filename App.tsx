@@ -1,26 +1,16 @@
 import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { StyleSheet, Text, View } from 'react-native'
-import AppNavigator from '@screens/AppNavigator'
-import SplashNavigator from '@screens/SplashNavigator'
-import LoginNavigator from '@screens/LoginNavigator'
+import { StyleSheet } from 'react-native'
+import RootScreen from '@screens/RootScreen'
+import { PhoneContextProvider } from '@contexts/PhoneContext'
+// import { PhoneContextProvider } from '@src/contexts/PhoneContext'
 
 export default function App() {
-  const isFirstTimeRun = false
-  const isSignedIn = true
+  // const isSignedIn = true
+
   return (
-    <SafeAreaProvider>
-      <NavigationContainer>
-        {isFirstTimeRun ? (
-          <SplashNavigator />
-        ) : isSignedIn ? (
-          <AppNavigator />
-        ) : (
-          <LoginNavigator />
-        )}
-      </NavigationContainer>
-    </SafeAreaProvider>
+    <PhoneContextProvider>
+      <RootScreen />
+    </PhoneContextProvider>
   )
 }
 

@@ -11,8 +11,6 @@ export const onCreateBlog = /* GraphQL */ `
         nextToken
         startedAt
       }
-      remark
-      description
       _version
       _deleted
       _lastChangedAt
@@ -30,8 +28,6 @@ export const onUpdateBlog = /* GraphQL */ `
         nextToken
         startedAt
       }
-      remark
-      description
       _version
       _deleted
       _lastChangedAt
@@ -49,8 +45,6 @@ export const onDeleteBlog = /* GraphQL */ `
         nextToken
         startedAt
       }
-      remark
-      description
       _version
       _deleted
       _lastChangedAt
@@ -68,8 +62,6 @@ export const onCreatePost = /* GraphQL */ `
       blog {
         id
         name
-        remark
-        description
         _version
         _deleted
         _lastChangedAt
@@ -97,8 +89,6 @@ export const onUpdatePost = /* GraphQL */ `
       blog {
         id
         name
-        remark
-        description
         _version
         _deleted
         _lastChangedAt
@@ -126,8 +116,6 @@ export const onDeletePost = /* GraphQL */ `
       blog {
         id
         name
-        remark
-        description
         _version
         _deleted
         _lastChangedAt

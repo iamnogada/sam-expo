@@ -31,20 +31,6 @@ export const schema = {
                         "associatedWith": "blog"
                     }
                 },
-                "remark": {
-                    "name": "remark",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "description": {
-                    "name": "description",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -219,5 +205,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "6ce226e07132ecd665ccbe83c22d89ff"
+    "version": "d3657e3b9ae60a408b0b5cc13d8c739b"
 };

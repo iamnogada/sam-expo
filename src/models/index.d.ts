@@ -20,8 +20,6 @@ export declare class Blog {
   readonly id: string;
   readonly name: string;
   readonly posts?: (Post | null)[];
-  readonly remark: string;
-  readonly description: string;
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<Blog, BlogMetaData>);
