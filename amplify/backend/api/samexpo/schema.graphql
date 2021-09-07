@@ -2,6 +2,8 @@ type Blog @model {
   id: ID!
   name: String!
   posts: [Post] @connection(keyName: "byBlog", fields: ["id"])
+  remark: String!
+  description: String!
 }
 
 type Post @model @key(name: "byBlog", fields: ["blogID"]) {

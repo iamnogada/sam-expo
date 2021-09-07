@@ -18,6 +18,8 @@ export const syncBlogs = /* GraphQL */ `
       items {
         id
         name
+        remark
+        description
         _version
         _deleted
         _lastChangedAt
@@ -38,6 +40,8 @@ export const getBlog = /* GraphQL */ `
         nextToken
         startedAt
       }
+      remark
+      description
       _version
       _deleted
       _lastChangedAt
@@ -56,6 +60,8 @@ export const listBlogs = /* GraphQL */ `
       items {
         id
         name
+        remark
+        description
         _version
         _deleted
         _lastChangedAt
@@ -104,6 +110,8 @@ export const getPost = /* GraphQL */ `
       blog {
         id
         name
+        remark
+        description
         _version
         _deleted
         _lastChangedAt
